@@ -1,52 +1,3 @@
-if settings.startup["early-logistics"].value then
-    data:extend(
-        {
-            {
-                type = "technology",
-                name = "early-logistics",
-                icon = "__base__/graphics/technology/logistic-system.png",
-                icon_size = 256,
-                prerequisites = {"construction-robotics", "titanium-processing"},
-                effects = {
-                    {
-                        type = "unlock-recipe",
-                        recipe = "titanium-chest"
-                    },
-                    {
-                        type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-passive-provider-2"
-                    },
-                    {
-                        type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-active-provider-2"
-                    },
-                    {
-                        type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-buffer-2"
-                    },
-                    {
-                        type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-storage-2"
-                    },
-                    {
-                        type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-requester-2"
-                    }
-                },
-                unit = {
-                    count = 300,
-                    ingredients = {
-                        {"automation-science-pack", 1},
-                        {"logistic-science-pack", 1},
-                        {"chemical-science-pack", 1}
-                    },
-                    time = 60
-                },
-                order = "c-k-a-b"
-            }
-        }
-    )
-else
     data:extend(
         {
             {
@@ -63,23 +14,23 @@ else
                     },
                     {
                         type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-passive-provider"
+                        recipe = "titanium-passive-provider-chest"
                     },
                     {
                         type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-active-provider"
+                        recipe = "titanium-active-provider-chest"
                     },
                     {
                         type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-buffer"
+                        recipe = "titanium-buffer-chest"
                     },
                     {
                         type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-storage"
+                        recipe = "titanium-storage-chest"
                     },
                     {
                         type = "unlock-recipe",
-                        recipe = "titanium-logistic-chest-requester"
+                        recipe = "titanium-requester-chest"
                     }
                 },
                 unit = {
@@ -97,4 +48,3 @@ else
             }
         }
     )
-end

@@ -5,141 +5,70 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"steel-chest", 1 },
-      {"titanium-alloy", 16}
+      {type = "item", name = "steel-chest", amount = 1 },
+      {type = "item", name = "titanium-alloy", amount = 16}
     },
-    result = "titanium-chest",
+    results = {{type = "item", name = "titanium-chest", amount = 1}},
     requester_paste_multiplier = 4
   },
   {
     type = "recipe",
-    name = "titanium-logistic-chest-passive-provider",
+    name = "titanium-passive-provider-chest",
     enabled = false,
     ingredients =
     {
-      {"titanium-chest", 1},
-      {"logistic-chest-passive-provider", 1}
+      {type = "item", name = "titanium-chest", amount = 1},
+      {type = "item", name = "passive-provider-chest", amount = 1}
     },
-    result = "titanium-logistic-chest-passive-provider",
-    requester_paste_multiplier = 4
-  },
-   {
-    type = "recipe",
-    name = "titanium-logistic-chest-passive-provider-2",
-    enabled = false,
-    ingredients =
-    {
-      {"titanium-chest", 1},
-      {"steel-plate", 8},
-      {"electronic-circuit", 3},
-      {"advanced-circuit", 1}
-    },
-    result = "titanium-logistic-chest-passive-provider",
+    results = {{type = "item", name = "titanium-passive-provider-chest", amount = 1}},
     requester_paste_multiplier = 4
   },
   {
     type = "recipe",
-    name = "titanium-logistic-chest-active-provider",
+    name = "titanium-active-provider-chest",
     enabled = false,
     ingredients =
     {
-      {"titanium-chest", 1},
-      {"logistic-chest-active-provider", 1}
+      {type = "item", name = "titanium-chest", amount = 1},
+      {type = "item", name = "active-provider-chest", amount = 1}
     },
-    result = "titanium-logistic-chest-active-provider",
+    results = {{type = "item", name = "titanium-active-provider-chest", amount = 1}},
     requester_paste_multiplier = 4
   },
   {
     type = "recipe",
-    name = "titanium-logistic-chest-active-provider-2",
+    name = "titanium-buffer-chest",
     enabled = false,
     ingredients =
     {
-      {"titanium-chest", 1},
-      {"steel-plate", 8},
-      {"electronic-circuit", 3},
-      {"advanced-circuit", 1}
+      {type = "item", name = "titanium-chest", amount = 1},
+      {type = "item", name = "buffer-chest", amount = 1}
     },
-    result = "titanium-logistic-chest-active-provider",
+    results = {{type = "item", name = "titanium-buffer-chest", amount = 1}},
     requester_paste_multiplier = 4
   },
   {
     type = "recipe",
-    name = "titanium-logistic-chest-buffer",
+    name = "titanium-storage-chest",
     enabled = false,
     ingredients =
     {
-      {"titanium-chest", 1},
-      {"logistic-chest-buffer", 1}
+      {type = "item", name = "titanium-chest", amount = 1},
+      {type = "item", name = "storage-chest", amount = 1}
     },
-    result = "titanium-logistic-chest-buffer",
+    results = {{type = "item", name = "titanium-storage-chest", amount = 1}},
     requester_paste_multiplier = 4
   },
   {
     type = "recipe",
-    name = "titanium-logistic-chest-buffer-2",
+    name = "titanium-requester-chest",
     enabled = false,
     ingredients =
     {
-      {"titanium-chest", 1},
-      {"steel-plate", 8},
-      {"electronic-circuit", 3},
-      {"advanced-circuit", 1}
+      {type = "item", name = "titanium-chest", amount = 1},
+      {type = "item", name = "requester-chest", amount = 1}
     },
-    result = "titanium-logistic-chest-buffer",
-    requester_paste_multiplier = 4
-  },
-  {
-    type = "recipe",
-    name = "titanium-logistic-chest-storage",
-    enabled = false,
-    ingredients =
-    {
-      {"titanium-chest", 1},
-      {"logistic-chest-storage", 1}
-    },
-    result = "titanium-logistic-chest-storage",
-    requester_paste_multiplier = 4
-  },
-  {
-    type = "recipe",
-    name = "titanium-logistic-chest-storage-2",
-    enabled = false,
-    ingredients =
-    {
-      {"titanium-chest", 1},
-      {"steel-plate", 8},
-      {"electronic-circuit", 3},
-      {"advanced-circuit", 1}
-    },
-    result = "titanium-logistic-chest-storage",
-    requester_paste_multiplier = 4
-  },
-  {
-    type = "recipe",
-    name = "titanium-logistic-chest-requester",
-    enabled = false,
-    ingredients =
-    {
-      {"titanium-chest", 1},
-      {"logistic-chest-requester", 1}
-    },
-    result = "titanium-logistic-chest-requester",
-    requester_paste_multiplier = 4
-  },
-  {
-    type = "recipe",
-    name = "titanium-logistic-chest-requester-2",
-    enabled = false,
-    ingredients =
-    {
-      {"titanium-chest", 1},
-      {"steel-plate", 8},
-      {"electronic-circuit", 3},
-      {"advanced-circuit", 1}
-    },
-    result = "titanium-logistic-chest-requester",
+    results = {{type = "item", name = "titanium-requester-chest", amount = 1}},
     requester_paste_multiplier = 4
   }
-
 })
